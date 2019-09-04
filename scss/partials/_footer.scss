@@ -1,0 +1,87 @@
+@import './helpers.scss';
+
+.footer-relative {
+    font-size: 10px;
+    color: #fff;
+    line-height: 2.6em;
+    a{
+        color: #fff;
+        @include transition(color .5s);
+        &:hover, &:focus{
+            color: #cecece;
+            text-decoration: none;
+        }
+    }
+    .contactPoint {
+        list-style: none;
+        padding-right: 0;
+        text-align: right;
+    }
+
+    .contactPoint-left {
+        position: absolute;
+        left: 30%;
+    }
+
+    .footer-size {
+        font-size: 12px;
+        line-height: 2em;
+        font-style: normal;
+    }
+
+    .footer-trust-text,
+    .footer-about {
+        text-align: justify;
+        padding: 0;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .contactPoint-left {
+            position: absolute;
+            left: 40%;
+        }
+
+        .contactPoint {
+            margin-right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 1199px) {
+        .contactPoint-left {
+            position: absolute;
+            left: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 991px) {
+        .contactPoint {
+            margin-right: 40%;
+        }
+
+        .contactPoint-left {
+            position: absolute;
+            left: 40%;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        .contactPoint {
+            margin-right: 40%;
+        }
+
+        .contactPoint-left {
+            position: absolute;
+            left: 30%;
+        }
+    }
+    .footer-socials{
+        text-align: center;
+        a{
+            font-size: 3em;
+            margin: .25em;
+        }
+    } 
+}
+.purplecolor{
+    background-color: blueviolet;
+    border-color:blueviolet;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "vns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "myWatch": "node-sass -o css scss/main.scss -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
