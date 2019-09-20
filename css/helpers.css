@@ -189,4 +189,8 @@
 .mt-5 {
   margin-top: 5em;
 }
+
+.d-none {
+  display: none;
+}
 /*# sourceMappingURL=helpers.css.map */
