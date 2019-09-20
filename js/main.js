@@ -202,7 +202,7 @@ $(document).ready(function () {
 
   function FireStory() {
     $('#counterHolder').remove();
-    $("#storyvideo").attr('href',storyUrl);
+    $("#storyurl").attr('href',storyUrl);
     $('#storyHolder .d-none').removeClass('d-none');
   }
 
