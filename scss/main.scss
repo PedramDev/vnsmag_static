@@ -4,6 +4,8 @@ $primary-color: #000;
 @import './partials/_footer.scss';
 @import './partials/_fonts.scss';
 @import './partials/_progress_plugin.scss';
+@import './partials/archive.scss';
+@import './partials/single.scss';
 
 
 h4,
@@ -419,7 +421,6 @@ ul.marquee li {
   margin: 0 auto;
   text-decoration: none;
   display: block;
-  width: 320px;
   height: 110px;
   padding: 1px;
   border: 1px solid #8ebd17;
@@ -447,12 +448,15 @@ ul.marquee li {
 
 .download_button .downloadicon{
   position: relative;
-  float: right;
-  margin: 10px;
+  margin: 0 auto;
+  margin-top: 8px;
   width: 140px;
   height: 90px;
 }
-
+.downloadbtnWidth{
+  max-width: 172px;
+  margin: 0 auto;
+}
 @-webkit-keyframes movedown {
   0% {
     -webkit-transform: translateY(-1.5em);

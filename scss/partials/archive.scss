@@ -1,0 +1,49 @@
+.article-holder {
+    text-align: center;
+    max-width: 300px;
+    display: inline-block;
+
+    img {
+        width: 100%;
+    }
+
+    .article-excerpt {
+        padding: 5px;
+        text-align: justify;
+    }
+
+    .post-meta {
+        &:after {
+            content: ' ';
+            clear: both;
+        }
+
+        height: 10px;
+        margin: 8px 0 0 0;
+        padding: 5px;
+        position: relative;
+
+        .author {
+            font-size: 10px;
+            color: #333;
+            margin-top: -9px;
+            position: absolute;
+            right: 4px;
+        }
+
+        .pbdate {
+            position: absolute;
+            font-size: 10px;
+            color: #333;
+            margin-top: -9px;
+            left: 2px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .article-holder {
+        max-width: 100%;
+        width: 100%;
+    }
+}

@@ -1,4 +1,11 @@
 //padding helpers
+.p-0{
+  padding: 0;
+}
+.px-0{
+  padding-right: 0;
+  padding-left: 0;
+}
 .pb-0{
     padding-bottom: 0;
   }
@@ -162,6 +169,9 @@
     margin-top: 5em;
   }
 
+  .my-1{
+    margin: 1em 0;
+  }
 
   .d-none{
     display: none;
@@ -176,3 +186,6 @@
     -o-transition: $param;
     transition: $param;
   }
+.bgw{
+  background: #fff;
+}

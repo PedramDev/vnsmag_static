@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
+
   $('.owl-carousel .item .news-title p').fitText(0.8, {
     minFontSize: '10px',
     maxFontSize: '20px'
   });
 
-  $.scrollUp();
 
   $('.marquee').marquee({
     duration: 10000,
@@ -116,11 +116,11 @@ $(document).ready(function () {
 
   var getMax = function () {
     return $(document).height() - $(window).height();
-  }
+  };
 
   var getValue = function () {
     return $(window).scrollTop();
-  }
+  };
 
   var indicator = document.createElement('progress');
   if ('max' in indicator) {
@@ -156,13 +156,13 @@ $(document).ready(function () {
       width = (value / max) * 100;
       width = width + '%';
       return width;
-    }
+    };
 
     var setWidth = function () {
       progressBar.css({
         width: getWidth()
       });
-    }
+    };
 
     $(document).on('scroll', setWidth);
     $(window).on('resize', function () {
@@ -210,11 +210,11 @@ $(document).ready(function () {
   $(document).on('click','#to_certificate',function(e){
     e.preventDefault();
     $('html, body').animate({ scrollTop:  $('#certificate_info').offset().top - 50 }, 'slow');
-  })
+  });
   $(document).on('click','#to_contactus',function(e){
     e.preventDefault();
     $('html, body').animate({ scrollTop:  $('#contactus_info').offset().top - 50 }, 'slow');
-  })
+  });
 
 
 });

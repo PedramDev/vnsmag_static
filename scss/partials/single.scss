@@ -1,0 +1,195 @@
+.article-single-container {
+    background: #fff;
+    padding: 15px;
+}
+
+.article-meta-holder {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+
+    .article-excerpt {
+        padding: 5px;
+        text-align: justify;
+    }
+
+    .post-meta {
+        &:after {
+            content: ' ';
+            clear: both;
+        }
+
+        height: 10px;
+        margin: 8px 0 0 0;
+        padding: 5px;
+        position: relative;
+
+        .author {
+            font-size: 10px;
+            color: #333;
+            margin-top: -9px;
+            position: absolute;
+            right: 4px;
+        }
+
+        .pbdate {
+            position: absolute;
+            font-size: 10px;
+            color: #333;
+            margin-top: -9px;
+            left: 2px;
+        }
+    }
+}
+
+.content-single {
+    line-height: 3em;
+    padding: 5px;
+}
+
+.post-commanet-container {
+    background: #fff;
+    padding: 15px;
+
+    .panel-body {
+        background:
+            #f5f9fb
+    }
+
+    .comment-header {
+        min-height: 60px;
+        color: #333;
+
+        .inside {
+            font-size: 16px;
+            padding-right: 5px;
+            line-height: 60px;
+            background:
+                #f9fbfc;
+            border-bottom: 2px solid #f3f7fa;
+        }
+    }
+        .child-comment {
+            position: relative;
+            width: 100%;
+    
+            .comment.teacher,
+            .comment.brother {
+                background: #d2eaf6 !important;
+                border: 1px solid #bad8e7 !important;
+            }
+    
+            .comment {
+                margin-right: 60px;
+                margin-left: 30px;
+                border-radius: 5px;
+                border-right: 0 !important;
+                background-color: #fff !important;
+                box-shadow: 2px 2px 7px rgba(0, 0, 0, .05);
+                -moz-box-shadow: 2px 2px 7px rgba(0, 0, 0, .05);
+                -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, .05);
+                margin-bottom: 15px;
+            }
+        }
+    
+        .comment {
+            position: relative;
+            min-height: 100px;
+            border-right: 3px solid #ced1d4;
+            padding: 15px 0 10px 0;
+            margin: 0 40px 0 0;
+            /* background: #fff url("img/bg-gradient1.png") repeat-x; */
+            background: #fff;
+            background: -moz-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 100%);
+            background: -webkit-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 100%);
+            background: linear-gradient(to bottom, rgba(250, 250, 250, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 100%);
+    
+            .userGravatar {
+                position: absolute;
+                top: 0;
+                right: -24px;
+                background-color: #fff;
+                border: 3px solid #ced1d4;
+                width: 48px;
+                border-radius: 100%;
+                box-shadow: 1px 3px 10px rgba(0, 0, 0, .1);
+                -moz-box-shadow: 1px 3px 10px rgba(0, 0, 0, .1);
+                -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, .1);
+            }
+    
+            .cBody {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 10px 30px 20px 20px;
+                line-height: 28px;
+            }
+    
+            .userInfo {
+                margin-right: 30px;
+    
+                span.uName {
+                    font-size: 15px;
+                    font-weight: 500;
+                    display: inline-block;
+                    margin-left: 15px;
+                }
+    
+                span.cDate {
+                    font-size: 12px;
+                    font-weight: 300;
+                    display: inline-block;
+                    margin-left: 15px;
+                    &::before{
+                        content: "(";
+                        margin-left: 2px;
+                    }
+                    &::after{
+                        content: ")";
+                        margin-right: 2px;
+                    }
+                }
+    
+                span.reply {
+                    position: absolute;
+                    top: 10px;
+                    left: 45px;
+                    display: inline-block;
+                    color: #777;
+                    cursor: pointer;
+                    font-weight: 400;
+                }
+            }
+        }
+}
+
+// .left-side {
+//     margin-left: 0.5vw;
+// }
+
+.middle-side {
+    // margin-left: -0.5vw;
+    // margin-right: -0.5vw;
+    padding: 0 0.5vw;
+}
+
+// .right-side {
+//     margin-right: 0.5vw;
+// }
+
+@media only screen and (max-width: 991px) {
+    // .middle-side{
+    //     margin-left: 0;
+    //     margin-right: 0;
+    //     padding: 0;
+    // }
+    // .right-side {
+    //     margin-right: 0;
+    // }
+    // .left-side {
+    //     margin-left: 0;
+    // }
+  }
